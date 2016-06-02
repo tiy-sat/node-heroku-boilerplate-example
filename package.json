@@ -10,7 +10,8 @@
     "start": "node index.js",
     "start-dev": "webpack-dev-server --inline --content-base .",
     "watch-sass": "sass --watch sass/main.sass:styles/main.css",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "webpack"
   },
   "dependencies": {
     "ejs": "2.4.1",
