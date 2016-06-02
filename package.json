@@ -28,8 +28,6 @@
     "webpack": "^1.12.13"
   },
   "devDependencies": {
-    "http-server": "^0.8.5",
-    "webpack-dev-server": "^1.14.1",
     "babel-jest": "^9.0.0",
     "jest-cli": "*",
     "react-addons-test-utils": "~0.14.0"
