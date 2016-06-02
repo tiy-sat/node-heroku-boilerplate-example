@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 import App from '../modules/App';
 
-describe('Boilerplate', () => {
+jest.unmock("../modules/App");
 
-  it('contains hello text', () => {
+describe('Node Heroku boilerplate', () => {
+
+  it('contains my name', () => {
     // This places our component into our test to find off of
-    var appRendered = TestUtils.renderIntoDocument(<App/>);
+    var appRendered = TestUtils.renderIntoDocument(
+      <App/>
+    );
     // find h1 on page
     var heading = TestUtils.findRenderedDOMComponentWithClass(appRendered, "heading");
     // assert it has text
-    expect(heading.textContent).toEqual("Heyyyyyyyy00000000o!");
+    expect(heading.textContent).toEqual("Jason Vanderslice");
   });
 });

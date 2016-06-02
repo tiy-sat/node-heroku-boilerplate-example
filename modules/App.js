@@ -45,7 +45,9 @@ export default React.createClass({
   render() {
     return (
       <article>
-        <h1 className="heading">Hello!</h1>
+        <h2 className="heading">
+          Jason Vanderslice
+        </h2>
         <form method="POST" ref="userForm" action="#" onSubmit={this.handleSubmitForm}>
           <input type="text" name="username" placeholder="username"/>
           <input type="submit" value="save"/>
