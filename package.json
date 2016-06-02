@@ -7,11 +7,12 @@
   },
   "main": "index.js",
   "scripts": {
+    "watch-js": "webpack --watch",
+    "watch-sass": "sass --watch sass/main.sass:public/stylesheets/main.css",
+    "watch": "npm run watch-sass & npm run watch-js",
+    "heroku-postbuild": "webpack",
     "start": "node index.js",
-    "start-dev": "webpack-dev-server --inline --content-base .",
-    "watch-sass": "sass --watch sass/main.sass:styles/main.css",
-    "test": "jest",
-    "heroku-postbuild": "webpack"
+    "test": "jest"
   },
   "dependencies": {
     "ejs": "2.4.1",
